@@ -1,0 +1,213 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    cursor: default;
+    justify-content: center;
+}
+section{
+    height: 100%;
+}
+
+.top_list{
+    position: relative;
+    background: black;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    z-index: 1;
+    /*position: fixed;*/
+}
+
+.navbar_menu{
+    position: relative;
+    text-decoration: none;
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*float: right;*/
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    /*text-align: center;*/
+    background: black;
+    color: white;
+}
+
+.navbar_menu li{
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 15px 16px;
+    text-align: center;
+    font-size: 20px;
+}
+.navbar_menu a{
+    text-decoration: none;
+    color: white;
+    border: transparent 1px solid;
+}
+.navbar_menu a:hover{
+    /*color: lightpink;*/
+    border: 1px solid white;
+    transition: all 300ms ease-in;
+}
+#home{
+    background: url("img/bg2.png") no-repeat;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 5;
+}
+.home_word{
+    /*display: flex;*/
+    flex-direction: column;
+    text-align: center;
+    flex-grow: 5;
+}
+.home_img{
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin: 30px 30px 30px 60px;
+}
+
+.home_title{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 40px;
+}
+.home_description{
+    text-align: center;
+    margin-top: 20px;
+}
+.home_text{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.home_button{
+    margin-top: 20px;
+    font-size: 30px;
+    background: transparent;
+    border: white 2px solid;
+    padding: 5px;
+}
+.home_button:hover{
+    background: lightpink;
+    color: white;
+    transition: all 500ms ease-in-out;
+}
+.home_button a{
+    text-decoration: none;
+    color: white;
+}
+#about{
+    background: black;
+    color: white;
+    display: flex;
+}
+.about_all{
+
+    flex-direction: row;
+    flex-grow: 6;
+}
+.about_title{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 20px;
+}
+.about_text{
+    font-size: 20px;
+    text-align: center;
+}
+
+.about_img{
+    width: 200px;
+    height: 300px;
+    flex-grow: 4;
+    padding: 20px 0;
+}
+
+#skills{
+    background: lemonchiffon;
+}
+.skills__title h1{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+}
+.skills__title h2{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.skills__title p{
+    text-align: center;
+    padding-top: 10px;
+}
+.skillSet{
+    display: flex;
+    background: lightgray;
+    color: white;
+    margin: 15px 0;
+}
+
+.skillSet__title{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+.skills__title h1{
+    font-size: 40px;
+}
+.skillSet__left{
+    flex-basis: 60%;
+    /*100%를 기준으로 배율을 정한다. */
+    background: darkgray;
+    padding: 20px 40px;
+
+}
+.skill_description{
+    display: flex;
+    justify-content: space-between;
+
+}
+.skill{
+    margin-bottom: 32px;
+}
+
+/*스킬바*/
+.skill__bar{
+    width: 100%;
+    height: 3px;
+    background-color: gray;
+}
+
+.skill__value{
+    height: 3px;
+    background-color: orange;
+}
+
+.skillSet__right{
+    flex-basis: 40%;
+}
+
+.tools{
+    background: gray;
+}
+.tools__list,.etc__list{
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    font-size: 15px;
+}
+.tools, .etc{
+    padding: 20px;
+}
